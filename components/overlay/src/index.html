@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src http://127.0.0.1:*; style-src 'self'; script-src 'self'">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dota Yanapay</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="card">
+      <header class="titlebar">
+        <span>DOTA YANAPAY</span>
+        <div class="window-actions">
+          <button id="minimize" aria-label="Minimizar">—</button>
+          <button id="close" aria-label="Cerrar">×</button>
+        </div>
+      </header>
+      <section class="content">
+        <div class="mascot" aria-hidden="true">
+          <div class="antenna"></div>
+          <div class="face"><i></i><i></i></div>
+          <div class="pulse"></div>
+        </div>
+        <div class="message-area">
+          <div id="status" class="status">Iniciando Yanapay…</div>
+          <p id="advice">Esperando el estado de Dota 2.</p>
+        </div>
+      </section>
+    </main>
+    <script src="renderer.js"></script>
+  </body>
+</html>

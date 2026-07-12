@@ -1,0 +1,26 @@
+{
+  "name": "dota-yanapay",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Asistente tactico local para Dota 2",
+  "workspaces": [
+    "components/*"
+  ],
+  "scripts": {
+    "postinstall": "node scripts/install-project.js",
+    "setup": "node scripts/install-project.js",
+    "start": "npm run start --workspace=@dota-yanapay/gsi-server",
+    "app": "npm run start --workspace=@dota-yanapay/overlay",
+    "dev": "npm run dev --workspace=@dota-yanapay/gsi-server",
+    "test": "npm run test --workspaces --if-present",
+    "api:smoke": "npm run smoke --workspace=@dota-yanapay/api-client",
+    "vision:install": "python -m pip install -r components/vision/requirements.txt",
+    "vision:start": "python components/vision/src/minimap_vision.py",
+    "voice:test": "python -m unittest discover components/voice/test",
+    "voice:test-audio": "python components/voice/src/voice_listener.py --audio-file"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

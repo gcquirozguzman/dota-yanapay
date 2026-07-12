@@ -1,0 +1,14 @@
+{
+  "name": "@dota-yanapay/overlay",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node scripts/start-overlay.cjs"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "electron": "^43.1.0"
+  }
+}

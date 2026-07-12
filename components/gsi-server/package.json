@@ -1,0 +1,19 @@
+{
+  "name": "@dota-yanapay/gsi-server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@dota-yanapay/api-client": "*",
+    "@dota-yanapay/state-combiner": "*",
+    "dotenv": "^17.2.3"
+  }
+}

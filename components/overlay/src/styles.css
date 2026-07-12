@@ -1,0 +1,65 @@
+:root {
+  color-scheme: dark;
+  font-family: "Segoe UI", sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 8px;
+  overflow: hidden;
+  background: transparent;
+}
+
+.card {
+  height: 194px;
+  border: 1px solid rgba(112, 255, 201, 0.55);
+  border-radius: 18px;
+  overflow: hidden;
+  color: #f4fff9;
+  background: linear-gradient(145deg, rgba(11, 25, 31, 0.96), rgba(18, 48, 51, 0.93));
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.45), inset 0 0 24px rgba(35, 219, 151, 0.08);
+}
+
+.titlebar {
+  -webkit-app-region: drag;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 16px;
+  color: #73f0bd;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.6px;
+  border-bottom: 1px solid rgba(112, 255, 201, 0.16);
+}
+
+.window-actions { -webkit-app-region: no-drag; display: flex; }
+.window-actions button {
+  width: 34px; height: 33px; border: 0; color: #c6d8d0; background: transparent; cursor: pointer;
+}
+.window-actions button:hover { background: rgba(255, 255, 255, 0.1); }
+
+.content { display: flex; gap: 14px; padding: 18px 16px; }
+
+.mascot {
+  position: relative;
+  flex: 0 0 82px;
+  height: 82px;
+  margin-top: 8px;
+  border-radius: 25px 25px 32px 32px;
+  background: linear-gradient(145deg, #52e6ad, #158d78);
+  box-shadow: 0 0 24px rgba(82, 230, 173, 0.34);
+}
+
+.antenna { position: absolute; left: 39px; top: -17px; width: 4px; height: 18px; background: #70efbd; }
+.antenna::before { content: ""; position: absolute; left: -4px; top: -5px; width: 12px; height: 12px; border-radius: 50%; background: #fff275; }
+.face { position: absolute; inset: 19px 13px 25px; display: flex; justify-content: space-around; align-items: center; border-radius: 18px; background: #102c32; }
+.face i { width: 9px; height: 13px; border-radius: 50%; background: #b9ffe4; box-shadow: 0 0 8px #b9ffe4; }
+.pulse { position: absolute; left: 31px; bottom: 9px; width: 20px; height: 4px; border-radius: 4px; background: #d7fff0; }
+
+.message-area { min-width: 0; flex: 1; }
+.status { color: #73f0bd; font-size: 11px; font-weight: 700; }
+#advice { height: 96px; margin: 7px 0 10px; overflow: hidden; font-size: 15px; line-height: 1.38; }

@@ -1,0 +1,25 @@
+{
+  "monitor": 1,
+  "side": "left",
+  "sizeFractionOfScreenHeight": 0.27,
+  "paddingPixels": 8,
+  "colorTolerance": 48,
+  "minimumBlobPixels": 3,
+  "maximumBlobPixels": 240,
+  "worldBounds": {
+    "minimum": -8288,
+    "maximum": 8288
+  },
+  "slots": [
+    { "slot": 0, "team": "radiant", "name": "blue", "rgb": [51, 117, 255] },
+    { "slot": 1, "team": "radiant", "name": "teal", "rgb": [102, 255, 191] },
+    { "slot": 2, "team": "radiant", "name": "purple", "rgb": [191, 0, 191] },
+    { "slot": 3, "team": "radiant", "name": "yellow", "rgb": [243, 240, 11] },
+    { "slot": 4, "team": "radiant", "name": "orange", "rgb": [255, 107, 0] },
+    { "slot": 5, "team": "dire", "name": "pink", "rgb": [254, 134, 194] },
+    { "slot": 6, "team": "dire", "name": "gray", "rgb": [161, 180, 71] },
+    { "slot": 7, "team": "dire", "name": "light_blue", "rgb": [101, 217, 247] },
+    { "slot": 8, "team": "dire", "name": "dark_green", "rgb": [0, 131, 33] },
+    { "slot": 9, "team": "dire", "name": "brown", "rgb": [164, 105, 0] }
+  ]
+}
